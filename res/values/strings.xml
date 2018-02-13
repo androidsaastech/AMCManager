@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AMCManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_customer_details">CustomerDetails</string>
+    <string name="title_activity_add_new_customer">AddNewCustomer</string>
+    <string name="title_activity_finding_dates">FindingDates</string>
+    <string name="title_activity_display_customer_details">DisplayCustomerDetails</string>
+
+</resources>

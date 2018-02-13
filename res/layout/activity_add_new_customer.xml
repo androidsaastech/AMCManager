@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#8877" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/txtcname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/etxtcname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Customer Name" />
+
+            <requestFocus />
+            
+        </LinearLayout>
+		<LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_below="@+id/ll_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/txtcmobile1"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/etxtmobile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="13"
+                android:hint="Enter Mobile1" />
+         
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_below="@+id/ll_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/txtcmobile2"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+	            android:id="@+id/etxtmobile2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:maxLength="13"
+	            android:ems="10" 
+	            android:hint="Enter Mobile2"/>         
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/ll_4"
+            android:layout_below="@+id/ll_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/txtcphone"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/etxtphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:hint="Enter Phone No" />
+ 
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/ll_5"
+            android:layout_below="@+id/ll_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp" >
+            <TextView
+                android:id="@+id/txtcaddress"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+	            android:id="@+id/etxtaddress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="Enter Address"
+	            android:ems="10" />         
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/ll_6"
+            android:layout_below="@+id/ll_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp" >
+            <TextView
+                android:id="@+id/txtcemail"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+	            android:id="@+id/etxtemail"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="Enter Email Id"
+	            android:ems="10" />         
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/ll_7"
+            android:layout_below="@+id/ll_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp" >
+            <TextView
+                android:id="@+id/txtsservice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+	            android:id="@+id/etxtservice"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="Enter service"
+	            android:ems="10" />         
+        </LinearLayout>
+        
+       <LinearLayout
+           android:id="@+id/ll_8"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/ll_7"
+           android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/txtstype"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <Spinner
+           android:id="@+id/spinner1"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/ll_8"
+           android:layout_weight="1"
+           android:layout_centerHorizontal="true" />           
+        </LinearLayout>
+       <LinearLayout
+            android:id="@+id/ll_9"
+            android:layout_below="@+id/ll_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp" >
+            <TextView
+                android:id="@+id/txtsdate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+	            android:id="@+id/etxtsdate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:hint="Enter Date"
+	            android:ems="10" />         
+        </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/ll_10"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignRight="@+id/ll_8"
+           android:layout_below="@+id/ll_9"
+           android:layout_marginTop="15dp"
+           android:orientation="horizontal" >
+
+           <Button
+               android:id="@+id/bcsave"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/button"
+               android:text="Save" />
+
+           <Button
+               android:id="@+id/bcclear"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/button"
+               android:text="Clear" />
+
+           <Button
+               android:id="@+id/bccancel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/button"
+               android:text="Cancel" />
+
+             </LinearLayout>
+       
+       
+         
+	</RelativeLayout>
+
+</ScrollView>

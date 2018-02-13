@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8876"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CustomerDetails" >
+
+    <Button
+        android:id="@+id/btnAdd_customerdetails"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:background="@drawable/add_service"
+         />
+    <Button
+        android:id="@+id/btnrefresh_customerdetails"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/List_customerdetails"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/refresh"
+        />
+    
+     <Button
+        android:id="@+id/btnprevious_customerdetails"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/btnrefresh_customerdetails"
+        android:layout_alignBottom="@+id/btnrefresh_customerdetails"
+        android:layout_alignLeft="@+id/a"
+        android:background="@drawable/pagination_prev"
+        android:gravity="left" />
+   
+    
+     <View
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/btnAdd_customerdetails"
+        android:background="#ccffaa" />
+
+    <ListView
+        android:id="@+id/List_customerdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/a"
+        android:divider="#ccffaa"
+        android:scrollbars="vertical"
+        android:dividerHeight="1dp" />
+
+        
+</RelativeLayout>

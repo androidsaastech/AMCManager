@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#8876"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_ic_action" >
+
+        <ListView
+            android:id="@+id/List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ccffaa"
+            android:dividerHeight="1dp"
+            android:background="#fffccc"
+            android:headerDividersEnabled="true" >
+        </ListView>
+    </RelativeLayout>
+     
+    <View
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ll_ic_action"
+        android:background="#ccffaa" />
+
+    <LinearLayout
+        android:id="@+id/ll_ic_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            style="@android:style/ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+            <View
+        		android:layout_width="0dp"
+        		android:layout_height="1dp"
+        		android:layout_weight="3" >	
+    		</View>
+            
+            <Button
+                android:id="@+id/btn_display"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add_engineer" />
+            <View
+        		android:layout_width="0dp"
+        		android:layout_height="50dp"
+        		android:background="@drawable/ic_bluejelly_vertical_line"
+        		android:layout_weight="1" >	
+    		</View>
+            
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:background="@drawable/searchimage"
+              />
+
+            <View
+        		android:layout_width="0dp"
+        		android:layout_height="50dp"
+        		android:background="@drawable/ic_bluejelly_vertical_line"
+        		android:visibility="gone"
+        		android:layout_weight="1"
+        		>	
+    		</View>
+                        
+            <Button
+                android:id="@+id/btn_report"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/report_circle" />
+			<View
+        		android:layout_width="0dp"
+        		android:layout_height="50dp"
+        		android:background="@drawable/ic_bluejelly_vertical_line"
+        		android:layout_weight="1" >	
+    		</View>
+                        
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/refresh" />
+            <View
+        		android:layout_width="0dp"
+        		android:layout_height="50dp"
+        		android:background="@drawable/ic_bluejelly_vertical_line"
+        		android:layout_weight="1" >	
+    		</View>
+            <Button
+                android:id="@+id/btn_add_customer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/add_service" />
+            <View
+        		android:layout_width="0dp"
+        		android:layout_height="1dp"
+        		android:layout_weight="3" >	
+    		</View>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
